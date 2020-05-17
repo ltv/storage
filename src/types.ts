@@ -29,6 +29,10 @@ export type StorageManagerSingleDiskConfig =
       config: AmazonWebServicesS3StorageConfig;
     }
   | {
+      driver: 'space';
+      config: DigitalOceanS3StorageConfig;
+    }
+  | {
       driver: 'gcs';
       config: GoogleCloudStorageConfig;
     }
