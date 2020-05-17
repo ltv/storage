@@ -57,8 +57,8 @@ export interface StorageManagerConfig {
   disks?: StorageManagerDiskConfig;
 }
 
-export interface Response {
-  raw: unknown;
+export interface Response<T = unknown> {
+  raw: T;
 }
 
 export interface ExistsResponse extends Response {
