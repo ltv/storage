@@ -29,7 +29,7 @@ export type StorageManagerSingleDiskConfig =
       config: AmazonWebServicesS3StorageConfig;
     }
   | {
-      driver: 'space';
+      driver: 'do';
       config: DigitalOceanS3StorageConfig;
     }
   | {

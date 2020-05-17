@@ -39,7 +39,7 @@ export default class StorageManager {
     this._defaultDisk = config.default;
     this._disksConfig = config.disks || {};
     this.registerDriver('s3', AmazonWebServicesS3Storage);
-    this.registerDriver('spaces', DigitalOceanS3Storage);
+    this.registerDriver('do', DigitalOceanS3Storage);
     this.registerDriver('gcs', GoogleCloudStorage);
     this.registerDriver('local', LocalFileSystemStorage);
   }
