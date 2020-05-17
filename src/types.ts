@@ -4,6 +4,10 @@ import {
 } from './Drivers/AmazonWebServicesS3Storage';
 import { GoogleCloudStorage, GoogleCloudStorageConfig } from './Drivers/GoogleCloudStorage';
 import {
+  DigitalOceanS3Storage,
+  DigitalOceanS3StorageConfig,
+} from './Drivers/DigitalOceanS3Storage';
+import {
   LocalFileSystemStorage,
   LocalFileSystemStorageConfig,
 } from './Drivers/LocalFileSystemStorage';
@@ -13,6 +17,8 @@ export type {
   AmazonWebServicesS3StorageConfig,
   GoogleCloudStorage,
   GoogleCloudStorageConfig,
+  DigitalOceanS3Storage,
+  DigitalOceanS3StorageConfig,
   LocalFileSystemStorage,
   LocalFileSystemStorageConfig,
 };

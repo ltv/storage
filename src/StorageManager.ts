@@ -1,4 +1,5 @@
 import { AmazonWebServicesS3Storage } from './Drivers/AmazonWebServicesS3Storage';
+import { DigitalOceanS3Storage } from './Drivers/DigitalOceanS3Storage';
 import { GoogleCloudStorage } from './Drivers/GoogleCloudStorage';
 import { LocalFileSystemStorage } from './Drivers/LocalFileSystemStorage';
 import Storage from './Storage';
@@ -38,6 +39,7 @@ export default class StorageManager {
     this._defaultDisk = config.default;
     this._disksConfig = config.disks || {};
     this.registerDriver('s3', AmazonWebServicesS3Storage);
+    this.registerDriver('spaces', DigitalOceanS3Storage);
     this.registerDriver('gcs', GoogleCloudStorage);
     this.registerDriver('local', LocalFileSystemStorage);
   }
